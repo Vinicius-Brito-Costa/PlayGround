@@ -50,7 +50,6 @@ public class RequestMaker {
 
         InputStream inputStream = connection.getInputStream();
 
-        long stopTime = System.currentTimeMillis();
         System.out.printf("Latency: %.3f\n", latency.stop());
 
         JSONObject jsonObject = new JSONObject(new Scanner(inputStream).nextLine());
